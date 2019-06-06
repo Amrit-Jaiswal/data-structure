@@ -1,4 +1,4 @@
-package com.example.binarytree;
+package binarytree;
 
 public class BinaryTreeTest {
     public static void main(String[] args) {

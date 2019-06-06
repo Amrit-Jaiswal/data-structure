@@ -1,4 +1,4 @@
-package com.example.sorting;
+package sorting;
 
 import java.util.stream.IntStream;
 

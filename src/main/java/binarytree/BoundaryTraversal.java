@@ -1,4 +1,4 @@
-package com.example.binarytree;
+package binarytree;
 
 public class BoundaryTraversal {
 
