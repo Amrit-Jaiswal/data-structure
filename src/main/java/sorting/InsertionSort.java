@@ -13,21 +13,17 @@ public class InsertionSort {
 
     private static int[] sort(int a[]){
         int len = a.length;
+        int j,key;
         for(int i=1; i<len; i++){
-            int temp = a[i];
-            for(int j=i; j>0; j--){
-                if(a[j-1] > temp){
+            j=i;
+            key = a[i];
+            while (j > 0){
+                if(a[j-1] > key){
                     a[j] = a[j-1];
-                }else {
-                    a[j] = temp;
-                    break;
+                    a[j-1] = key;
                 }
-                if(j-1 == 0){
-                    a[j-1] = temp;
-                    break;
-                }
+                j--;
             }
-
         }
 
         return a;
