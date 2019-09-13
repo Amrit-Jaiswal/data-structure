@@ -2,8 +2,8 @@ package binarytree;
 
 public class Node<T> {
     T value;
-    Node left;
-    Node right;
+    Node<T> left;
+    Node<T> right;
 
     public Node(T value) {
         this.value = value;
