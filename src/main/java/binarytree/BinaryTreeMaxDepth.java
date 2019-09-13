@@ -15,14 +15,13 @@ public class BinaryTreeMaxDepth {
         if (root == null) {
             return 0;
         }
-        int lDepth = maxDepth(root.left);
-        int rDepth = maxDepth(root.right);
-
-        if (lDepth > rDepth) {
-            return lDepth + 1;
-        } else {
-            return rDepth + 1;
+        if (root.left == null && root.right == null){
+            return 0;
         }
+        int lDepth = 1 + maxDepth(root.left);
+        int rDepth = 1 + maxDepth(root.right);
+
+        return Math.max(lDepth, rDepth);
     }
 
     private Node<Integer> createBinaryTree(){
